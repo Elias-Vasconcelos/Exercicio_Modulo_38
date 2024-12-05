@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>Exercicio_Modulo_38</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Archetype - Exercicio_Modulo_38</name>
+  <url>http://maven.apache.org</url>
+  <packaging>war</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jboss.spec</groupId>
+      <artifactId>jboss-javaee-all-7.0</artifactId>
+      <version>1.1.1.Final</version>
+      <!-- <scope>provided</scope> -->
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+      <version>8.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.primefaces</groupId>
+      <artifactId>primefaces</artifactId>
+      <version>11.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.primefaces.themes</groupId>
+      <artifactId>all-themes</artifactId>
+      <version>1.0.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.3.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>jakarta.faces</groupId>
+      <artifactId>jakarta.faces-api</artifactId>
+      <version>4.0.1</version> <!-- Versão mais estável -->
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish</groupId>
+      <artifactId>jakarta.faces</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+
+
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>JBoss Repository</id>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>prime-repo</id>
+      <name>PrimeFaces Maven Repository</name>
+      <url>http://repository.primefaces.org</url>
+      <layout>default</layout>
+    </repository>
+    <repository>
+      <id>prime-repo</id>
+      <name>PrimeFaces Maven Repository</name>
+      <url>https://repository.primefaces.org</url> <!-- Alterado para HTTPS -->
+      <layout>default</layout>
+    </repository>
+    <repository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url> <!-- Certifique-se de usar HTTPS -->
+    </repository>
+    <repository>
+      <id>maven-central</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>11</release>  <!--or <release>10</release> -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
